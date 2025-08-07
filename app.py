@@ -286,7 +286,7 @@ def calculate_dates(category, movement_type, product_name, dpj_date=None):
     batch = f"{year_short}{product_code}{week_number}-{week_number+1}"
     
     # Calculate best before date based on category
-    if category == 'MSM':
+    if category == 'VSM':
         bbd = date + timedelta(days=30*12)  # 12 months
     elif category == 'Offal':
         bbd = date + timedelta(days=30*9)  # 9 months
